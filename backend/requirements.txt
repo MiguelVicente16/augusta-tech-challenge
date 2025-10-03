@@ -1,0 +1,42 @@
+# FastAPI and server
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+sse-starlette>=2.1.0
+
+# Database
+asyncpg>=0.30.0
+databases[postgresql]>=0.9.0
+psycopg2-binary==2.9.9
+sqlalchemy>=2.0.0,<3.0.0
+
+# Data processing
+pandas==2.1.4
+numpy==1.24.4
+
+# Configuration and environment
+pydantic==2.5.1
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# AI providers
+openai>=1.30.0  # Updated for embeddings API
+google-generativeai==0.7.2
+langchain-core>=0.2.40,<0.3.0
+langchain-openai>=0.1.0,<0.2.0
+langchain-postgres>=0.0.15
+pgvector>=0.3.0
+pydantic-ai>=0.0.14  # For agentic chatbot with tool calling
+
+# Logging and utilities
+structlog==23.2.0
+logfire>=4.10.0  # Pydantic AI observability and tracing
+
+# Testing (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Development tools (optional)
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0

@@ -1,0 +1,251 @@
+# ============================================================================
+# Root .gitignore for Augusta Tech Challenge
+# ============================================================================
+
+# Environment & Configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+test_env/
+
+# Claude AI & Development
+.claude/
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Conda
+.conda/
+miniconda3/
+Miniconda3-latest-Linux-x86_64.sh
+
+# Logfire (Pydantic AI observability)
+.logfire/
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Data files (optional - uncomment if you want to exclude CSVs)
+# *.csv
+# data/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Backend specific
+backend/test_env/
+backend/venv/
+backend/.pytest_cache/
+backend/htmlcov/
+backend/.coverage
+backend/*.db
+backend/logs/
+
+# Frontend specific (Node.js)
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+frontend/.nuxt/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/.output/
+frontend/.vercel
+frontend/.netlify
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output
+lib-cov
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
+.lock-wscript
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.swp
+*.swo
+*~
+
+# SSH Keys
+.ssh/
+*.pem
+*.key
+id_rsa*
+
+# AWS
+.aws/
+
+# Crawl4AI cache
+.crawl4ai/
+
+# Other user-specific files
+.bash_history
+.python_history
+.wget-hsts
+.lesshst
+.motd_shown
+.sudo_as_admin_successful
+.wdm/
+.yarnrc
+.wsl-config
+.Xauthority
+
+# Build artifacts
+*.o
+*.a
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore all other project directories in parent folder
+../WebRagAgent/
+../auto_gpt/
+../car-recommendation-system/
+../explica-schedule/
+../gestaoplan-prato-f/
+../home_agent/
+../main-website/
+../matchlytics-website/
+../matchlytics/
+../revenue-rover-sync/
+../usawa-miguel-vicente/
+../vaisys_tech/
+
+# Keep important files
+!README.md
+!.gitignore
+!.env.example
+!requirements.txt
+!package.json

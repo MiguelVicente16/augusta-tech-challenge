@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: rgb(229 229 229);
+  }
+
+  body {
+    font-feature-settings: "rlig" 1, "calt" 1;
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .card-elevated {
+    @apply bg-white rounded-xl shadow-lg border border-gray-100 transition-all duration-200 hover:shadow-xl;
+  }
+  
+  .card-subtle {
+    @apply bg-white rounded-lg shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md;
+  }
+  
+  .btn-primary {
+    @apply bg-slate-900 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-slate-800 hover:shadow-lg active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-800 px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-gray-200 hover:shadow-md active:scale-95;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all duration-200 bg-white;
+  }
+}
